@@ -25,7 +25,12 @@ void counting_sort(Poscode* &A, size_t n, int p, int M){
             idx = ch - 'A';                 // distancia entre letras mayuscula en la tabla ASCII
         }
 
-        Lists[idx].insertLast(A[c]);        // agregar poscode en la tail de la lista, agrupandolos segun su valor en la posicion p
+        Lists[idx].insertLast(c);           // agregar poscode en la tail de la lista, agrupandolos segun su valor en la posicion p
+    }
+
+    Poscode* temp = new Poscode[n];
+    for (size_t i = 0; i < n; i++){
+        temp[i] = A[i];
     }
 
     delete[] A;                             // liberar memoria de A
@@ -34,13 +39,14 @@ void counting_sort(Poscode* &A, size_t n, int p, int M){
     int k = 0;
     for (int i = 0; i < M; i++){            // recorrer listas en orden creciente
         Node* ptr = Lists[i].getHead();     // obtener head de cada lista
-
-        while (ptr != nullptr){             // recorrer nodos de la lista
-            A[k] = ptr->getData();          // volver a llenar A con poscodes ordenados
+        
+        while (ptr != nullptr){             // recorrer nodos de la lista        
+            A[k] = temp[ptr->getData()];    // volver a llenar A con poscodes ordenados
             k++;
             ptr = ptr->getNext();           // avanzar en la lista
         }
     }
+    delete[] temp;
 
     // visualizar listas para depuracion
     /*for (int i = 0; i < M; i++){

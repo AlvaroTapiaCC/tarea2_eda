@@ -7,7 +7,6 @@
 #define LINKEDLIST_HPP_
 
 #include "node.hpp"
-#include "poscode.hpp"
 
 namespace eda {
 
@@ -18,12 +17,12 @@ private:
 
 public:
 	LinkedList();
-	void insertLast(Poscode code);
-	void insertFirst(Poscode code);
+	void insertLast(int val);
+	void insertFirst(int val);
 	void removeFirst();
-	void remove(Poscode code);
+	void remove(int val);
 	void removeAll();
-	Node* find(Poscode code);
+	Node* find(int val);
 	Node* getHead();
 	void print();
 	virtual ~LinkedList();

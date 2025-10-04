@@ -4,7 +4,6 @@
 CMakeFiles/test.dir/src/linkedList.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/linkedList.cpp \
   /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/linkedList.hpp \
   /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/node.hpp \
-  /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -184,7 +183,6 @@ CMakeFiles/test.dir/src/linkedList.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp
 
 CMakeFiles/test.dir/src/node.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/node.cpp \
   /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/node.hpp \
-  /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -876,6 +874,8 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 
 /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/utils.cpp:
 
+/home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
@@ -942,8 +942,6 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
 /usr/include/c++/13/bits/move.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
@@ -970,10 +968,6 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 
 /usr/include/c++/13/bits/allocator.h:
 
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/ctype.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/c++/13/bits/char_traits.h:
@@ -987,6 +981,8 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 /usr/include/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
@@ -1028,6 +1024,16 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
 /usr/include/c++/13/bits/postypes.h:
 
 /usr/include/c++/13/bits/std_abs.h:
@@ -1036,35 +1042,11 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 
 /usr/include/c++/13/bits/localefwd.h:
 
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/bits/exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/c++/13/bits/invoke.h:
-
 /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/node.cpp:
 
 /usr/include/c++/13/bits/ostream.tcc:
 
 /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/node.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp:
-
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/13/bits/locale_facets.h:
 
@@ -1077,6 +1059,12 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 /usr/include/c++/13/type_traits:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/stdio.h:
 
 /usr/include/c++/13/string:
 
@@ -1098,11 +1086,21 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 
 /usr/include/c++/13/ios:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/c++/13/cerrno:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/stdio.h:
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/bits/exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/ctype.h:
 
 /usr/include/c++/13/clocale:
 

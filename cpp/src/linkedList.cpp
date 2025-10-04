@@ -1,5 +1,4 @@
 #include "linkedList.hpp"
-#include "poscode.hpp"
 #include <iostream>
 
 namespace eda {
@@ -8,8 +7,8 @@ LinkedList::LinkedList(): head(nullptr), tail(nullptr) {
 
 }
 
-void LinkedList::insertFirst(Poscode code){
-	Node* node = new Node(code);
+void LinkedList::insertFirst(int val){
+	Node* node = new Node(val);
 	if (head == nullptr) {
 		head = node;
 		tail = node;
@@ -20,8 +19,8 @@ void LinkedList::insertFirst(Poscode code){
 	}
 }
 
-void LinkedList::insertLast(Poscode code){
-	Node* node = new Node(code);
+void LinkedList::insertLast(int val){
+	Node* node = new Node(val);
 	if (head == nullptr) {
 		head = node;
 		tail = node;
@@ -43,11 +42,11 @@ void LinkedList::removeFirst(){
 	}
 }
 
-void LinkedList::remove(Poscode code){
+void LinkedList::remove(int val){
 	Node* ptr = head;
 	Node* ptr_prev = nullptr;
 	while (ptr != nullptr){
-		if (ptr->getData() == code){
+		if (ptr->getData() == val){
 			//erase node
 			if (ptr_prev == nullptr) {
 				head = ptr->getNext();
@@ -74,9 +73,9 @@ void LinkedList::removeAll(){
 	}
 }
 
-Node* LinkedList::find(Poscode code){
+Node* LinkedList::find(int val){
 	Node* ptr = head;
-	while ((ptr != nullptr) && (ptr->getData() != code)){
+	while ((ptr != nullptr) && (ptr->getData() != val)){
 		ptr = ptr->getNext();
 	}
 	return ptr;

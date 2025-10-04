@@ -5,7 +5,6 @@ CMakeFiles/test.dir/src/linkedList.cpp.o
  /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/linkedList.cpp
  /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/linkedList.hpp
  /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/node.hpp
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -186,7 +185,6 @@ CMakeFiles/test.dir/src/linkedList.cpp.o
 CMakeFiles/test.dir/src/node.cpp.o
  /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/node.cpp
  /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/node.hpp
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h

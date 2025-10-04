@@ -1,18 +1,17 @@
 #include "node.hpp"
-#include "poscode.hpp"
 #include <iostream>
 
 namespace eda {
 
 
-Node::Node(): data(""), ptrNext(nullptr) {
+Node::Node(): data(-1), ptrNext(nullptr) {
 }
 
-Node::Node(Poscode code, Node* next): data(code), ptrNext(next) {
+Node::Node(int val, Node* next): data(val), ptrNext(next) {
 
 }
 
-void Node::setData(Poscode _data){
+void Node::setData(int _data){
 	data = _data;
 }
 
@@ -20,7 +19,7 @@ void Node::setNext(Node* next){
 	ptrNext = next;
 }
 
-Poscode Node::getData(){
+int Node::getData(){
 	return data;
 }
 Node* Node::getNext(){
@@ -28,7 +27,7 @@ Node* Node::getNext(){
 }
 
 void Node::print(){
-	std::cout << data.getData() ;
+	std::cout << data ;
 }
 
 Node::~Node() {

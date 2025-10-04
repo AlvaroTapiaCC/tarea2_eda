@@ -6,20 +6,19 @@
 #ifndef NODE_HPP_
 #define NODE_HPP_
 
-#include "poscode.hpp"
 
 namespace eda {
 
 class Node {
 private:
-	Poscode data;
+	int data;
 	Node* ptrNext;
 public:
 	Node();
-	Node(Poscode _data, Node* next = nullptr);
-	void setData(Poscode _data);
+	Node(int _data, Node* next = nullptr);
+	void setData(int _data);
 	void setNext(Node* _next);
-	Poscode getData();
+	int getData();
 	Node* getNext();
 	void print();
 	virtual ~Node();
