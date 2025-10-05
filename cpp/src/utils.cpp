@@ -65,6 +65,56 @@ void quick_sort(Poscode* A, size_t n){
     quick_sort(A, 0, n - 1);
 }
 
+void merge(Poscode* A, size_t i, size_t k, size_t j){
+    size_t n = j - i + 1;
+    Poscode* auxArr = new Poscode[n];
+    size_t q = 0;
+    size_t p1 = i;
+    size_t p2 = k + 1;
+
+    while (p1 <= k && p2 <= j){
+        if (A[p1].getData() <= A[p2].getData()){
+            auxArr[q] = A[p1];
+            p1++;
+        } else {
+            auxArr[q] = A[p2];
+            p2++;
+        }
+        q++;
+    }
+
+    while (p1 <= k){
+        auxArr[q] = A[p1];
+        p1++;
+        q++;
+    }
+
+    while (p2 <= j){
+        auxArr[q] = A[p2];
+        p2++;
+        q++;
+    }
+
+    for (size_t t = 0; t < n; t++){
+        A[i + t] = auxArr[t];
+    }
+
+    delete[] auxArr;
+}
+
+void merge_sort(Poscode* A, size_t i, size_t j){
+    size_t k = (i + j) / 2;
+    if (i < j){
+        merge_sort(A, i, k);
+        merge_sort(A, k + 1, j);
+        merge(A, i, k, j);
+    }
+}
+
+void merge_sort(Poscode* A, size_t n){
+    return merge_sort(A, 0, n - 1);
+}
+
 void counting_sort(const Poscode* originalCodes, size_t* &A, size_t n, int p, int M){
     LinkedList Lists[M];                    // arreglo de listas enlazadas para cada posible valor de la posicion p
 
@@ -94,10 +144,6 @@ void counting_sort(const Poscode* originalCodes, size_t* &A, size_t n, int p, in
     }
 
     return;
-}
-
-void merge_sort(Poscode *A, size_t n){
-
 }
 
 void radix_sort(const Poscode* originalCodes, size_t* &A, size_t n){

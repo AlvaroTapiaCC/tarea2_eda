@@ -10,6 +10,8 @@ size_t getRandomInt(size_t min, size_t max);
 size_t split_qs(Poscode *A, size_t i, size_t j);
 void quick_sort(Poscode *A, size_t n);
 void quick_sort(Poscode *A, size_t i, size_t j);
+void merge(Poscode *A, size_t i, size_t k, size_t j);
+void merge_sort(Poscode *A, size_t i, size_t j);
 void merge_sort(Poscode *A, size_t n);
 void counting_sort(const Poscode* originalCodes, size_t* &A, size_t n, size_t p, size_t M);
 void radix_sort(const Poscode* originalCodes, size_t* &A, size_t n);
