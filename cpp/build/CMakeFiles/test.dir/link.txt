@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test.dir/test.cpp.o CMakeFiles/test.dir/src/linkedList.cpp.o CMakeFiles/test.dir/src/node.cpp.o CMakeFiles/test.dir/src/utils.cpp.o CMakeFiles/test.dir/src/poscode.cpp.o -o test 

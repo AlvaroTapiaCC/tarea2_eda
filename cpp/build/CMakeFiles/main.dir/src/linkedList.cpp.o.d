@@ -1,6 +1,7 @@
-CMakeFiles/test.dir/src/node.cpp.o: \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/node.cpp \
+CMakeFiles/main.dir/src/linkedList.cpp.o: \
+ /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/linkedList.cpp \
  /usr/include/stdc-predef.h \
+ /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/linkedList.hpp \
  /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/node.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \

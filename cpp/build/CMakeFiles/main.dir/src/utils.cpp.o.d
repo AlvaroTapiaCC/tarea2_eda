@@ -1,4 +1,4 @@
-CMakeFiles/test.dir/src/utils.cpp.o: \
+CMakeFiles/main.dir/src/utils.cpp.o: \
  /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/utils.cpp \
  /usr/include/stdc-predef.h \
  /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/utils.hpp \
