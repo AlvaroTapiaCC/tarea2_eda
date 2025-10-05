@@ -696,6 +696,7 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/chrono.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -720,6 +721,7 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
@@ -740,9 +742,12 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/chrono \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -758,8 +763,10 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/limits \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
+  /usr/include/c++/13/ratio \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -776,6 +783,7 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/time.h \
@@ -800,6 +808,8 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -859,8 +869,23 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/include/c++/13/limits:
+
+/usr/include/c++/13/ctime:
+
+/usr/include/c++/13/chrono:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/usr/include/stdint.h:
 
 /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp:
 
@@ -881,6 +906,8 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -998,6 +1025,8 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 
 /usr/include/c++/13/bits/stringfwd.h:
 
+/usr/include/c++/13/ratio:
+
 /usr/include/c++/13/cwctype:
 
 /usr/include/c++/13/bits/predefined_ops.h:
@@ -1060,6 +1089,8 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/13/cerrno:
@@ -1113,6 +1144,8 @@ CMakeFiles/test.dir/test.cpp.o: /home/alvaro/eda/tarea2/tarea2_eda/cpp/test.cpp 
 /usr/include/c++/13/bits/charconv.h:
 
 /usr/include/c++/13/cstdio:
+
+/usr/include/c++/13/cstdint:
 
 /usr/include/c++/13/cstdlib:
 
