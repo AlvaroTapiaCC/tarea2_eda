@@ -1,4 +1,4 @@
-# Install script for directory: /home/alvaro/eda/tarea2/tarea2_eda/cpp
+# Install script for directory: /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alvaro/eda/tarea2/tarea2_eda/cpp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

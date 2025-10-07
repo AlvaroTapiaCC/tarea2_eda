@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/src/test.cpp.o: \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/test.cpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/src/test.cpp \
  /usr/include/stdc-predef.h \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/test.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/test.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -150,10 +150,10 @@ CMakeFiles/main.dir/src/test.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/utils.hpp \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/linkedList.hpp \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/node.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/utils.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/poscode.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/linkedList.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/node.hpp \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \

@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/main.cpp.o: \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/main.cpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/main.cpp \
  /usr/include/stdc-predef.h \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/test.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/test.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

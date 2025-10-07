@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/src/node.cpp.o: \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/node.cpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/src/node.cpp \
  /usr/include/stdc-predef.h \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/node.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/node.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

@@ -1,8 +1,8 @@
 CMakeFiles/main.dir/src/poscode.cpp.o: \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/src/poscode.cpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/src/poscode.cpp \
  /usr/include/stdc-predef.h \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp \
- /home/alvaro/eda/tarea2/tarea2_eda/cpp/include/poscode.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/poscode.hpp \
+ /home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include/poscode.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

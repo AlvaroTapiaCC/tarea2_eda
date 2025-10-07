@@ -14,39 +14,50 @@ using namespace std::chrono;
 SorterTest::SorterTest(const vector<string>& files_, const vector<size_t>& sizes_, int runs_)
     : files(files_), sizes(sizes_), runs(runs_) {}
 
+// Helper anónimo para convertir a ms usando steady_clock (monótono)
+namespace {
+    inline double to_ms(const chrono::steady_clock::time_point &start,
+                        const chrono::steady_clock::time_point &end){
+        using namespace chrono;
+        auto diff = duration<double, milli>(end - start).count();
+        if (diff < 0) return 0.0; // defensa (no debería ocurrir con steady_clock)
+        return diff;
+    }
+}
+
 double SorterTest::run_radix(const string& file, size_t n) {
     string strfile = "../../code_files/" + file;
     Poscode *original_data = readCodes(strfile, n);
+    if (!original_data) return 0.0;
     size_t *sorted = createIndexArray(n);
-        auto start = high_resolution_clock::now();
+    auto start = chrono::steady_clock::now();
     radix_sort(original_data, sorted, n);
-        auto end = high_resolution_clock::now();
+    auto end = chrono::steady_clock::now();
     delete[] original_data;
     delete[] sorted;
-        duration<double> elapsed = end - start;
-    return elapsed.count() * 1000; // milisegundos
+    return to_ms(start, end);
 }
 
 double SorterTest::run_quick(const string& file, size_t n) {
     string strfile = "../../code_files/" + file;
     Poscode *original_data = readCodes(strfile, n);
-        auto start = high_resolution_clock::now();
+    if (!original_data) return 0.0;
+    auto start = chrono::steady_clock::now();
     quick_sort(original_data, n);
-        auto end = high_resolution_clock::now();
+    auto end = chrono::steady_clock::now();
     delete[] original_data;
-        duration<double> elapsed = end - start;
-    return elapsed.count() * 1000;
+    return to_ms(start, end);
 }
 
 double SorterTest::run_merge(const string& file, size_t n) {
     string strfile = "../../code_files/" + file;
     Poscode *original_data = readCodes(strfile, n);
-        auto start = high_resolution_clock::now();
+    if (!original_data) return 0.0;
+    auto start = chrono::steady_clock::now();
     merge_sort(original_data, n);
-        auto end = high_resolution_clock::now();
+    auto end = chrono::steady_clock::now();
     delete[] original_data;
-        duration<double> elapsed = end - start;
-    return elapsed.count() * 1000;
+    return to_ms(start, end);
 }
 
 double SorterTest::promedio(const vector<double>& v) const {
@@ -69,7 +80,7 @@ void SorterTest::run_all(ostream& out) {
 
         // RADIX
         cout << "Running radix on n=" << n << endl;
-        vector<double> tiempos_radix;
+        vector<double> tiempos_radix; tiempos_radix.reserve(runs);
         for (int r = 0; r < runs; r++)
             tiempos_radix.push_back(run_radix(file, n));
         double prom_radix = promedio(tiempos_radix);
@@ -78,7 +89,7 @@ void SorterTest::run_all(ostream& out) {
 
         // QUICK
         cout << "Running quick on n=" << n << endl;
-        vector<double> tiempos_quick;
+        vector<double> tiempos_quick; tiempos_quick.reserve(runs);
         for (int r = 0; r < runs; r++)
             tiempos_quick.push_back(run_quick(file, n));
         double prom_quick = promedio(tiempos_quick);
@@ -87,7 +98,7 @@ void SorterTest::run_all(ostream& out) {
 
         // MERGE
         cout << "Running merge on n=" << n << endl;
-        vector<double> tiempos_merge;
+        vector<double> tiempos_merge; tiempos_merge.reserve(runs);
         for (int r = 0; r < runs; r++)
             tiempos_merge.push_back(run_merge(file, n));
         double prom_merge = promedio(tiempos_merge);

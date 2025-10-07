@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/alvaro/eda/tarea2/tarea2_eda/cpp/include
+CXX_INCLUDES = -I/home/alvaro/universidad/eda/tareas/tarea2_eda/cpp/include
 
 CXX_FLAGS = -std=gnu++11
 
